@@ -11,6 +11,8 @@ import java.util.NoSuchElementException;
  *  Keep the entries ordered in an resizing array.
  * </p>
  * 
+ * <p>This colecttion uses <i>Binary heap</i> algorithm.</p>
+ * 
  * @see UnorderedMinPQ.java
  * @author eder.magalhaes
  * @param <Key> parameterized type for key.

@@ -11,6 +11,8 @@ import java.util.NoSuchElementException;
  *  Keep the entries ordered in an resizing array.
  * </p>
  * 
+ * <p>This colecttion uses <i>Binary heap</i> algorithm.</p>
+ * 
  * @see UnorderedMaxPQ.java
  * @author eder.magalhaes
  * @param <Key> parameterized type for key.
@@ -57,6 +59,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
         return max;
     }
     
+    //node promoted to level of incompetence (Binary heap);
     private void swim(int k) {
         while (k > 1 && less(k / 2, k)) {
             exch(k, k / 2);
@@ -64,6 +67,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
         }
     }
     
+    //better subordinate (child) promoted (Binary heap);
     private void sink(int k) {
         while (2 * k <= N) {
             int j = 2 * k;
