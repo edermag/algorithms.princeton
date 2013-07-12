@@ -7,3 +7,6 @@ This is a nice course, that covers the essential information that every serious 
 
 Moure about the course:
 https://www.coursera.org/course/algs4partI
+
+`Portuguese <https://github.com/edermag/algorithms.princeton/blob/master/README_pt_BR.rst>`_
+
